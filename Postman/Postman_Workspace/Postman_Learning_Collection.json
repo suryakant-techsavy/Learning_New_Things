@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "b1938fcf-a88b-4a07-b723-a599b259052e",
+		"name": "Postman_Learning_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "Get /search postman-learning-mule-demo-api-(Running-on-CloudHub)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"name\",\"suryaglobal\");\r",
+							"pm.environment.set(\"name\",\"suryaenvironment\");\r",
+							"pm.collectionVariables.set(\"name\",\"suryacollection\");\r",
+							"pm.variables.set(\"name\",\"suryalocal\");\r",
+							"pm.globals.get(\"name\");\r",
+							"pm.environment.get(\"name\");\r",
+							"pm.collectionVariables.get(\"name\");\r",
+							"pm.variables.get(\"name\");\r",
+							"console.log(pm.environment.get(\"name\"))\r",
+							"console.info(pm.variables.get(\"name\"))\r",
+							"pm.variables.unset(\"name\")\r",
+							"pm.environment.unset(\"name\")\r",
+							"console.info(pm.variables.get(\"name\"))\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var jsonrequest=pm.request.toJSON();\r",
+							"pm.globals.set(\"jsonrequest\",jsonrequest)\r",
+							"console.log(pm.globals.get(\"jsonrequest\"))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer \"etrqwertyuioplkjhgfdsazxcvbnmjjhfdg\"",
+						"type": "text"
+					},
+					{
+						"key": "Request-Tracking-Id",
+						"value": "Testing",
+						"type": "text"
+					},
+					{
+						"key": "source-app",
+						"value": "Greenpages",
+						"type": "text"
+					},
+					{
+						"key": "target-system",
+						"value": "eadm",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "gh",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{CloudHub.Mulesoft.API.URL}}{{CloudHub.Mulesoft.API.PATH}}?q=yahoo",
+					"host": [
+						"{{CloudHub.Mulesoft.API.URL}}{{CloudHub.Mulesoft.API.PATH}}"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "yahoo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get https://reqres.in/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}?page=2",
+					"host": [
+						"{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post https://reqres.in/users creates User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"surya\",\r\n    \"job\": \"leader\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}",
+					"host": [
+						"{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT https://reqres.in/users updates the user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Surya\",\r\n    \"job\": \"zion resident\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}/2",
+					"host": [
+						"{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch https://reqres.in/users/2 updates user",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"zion resident\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}/2",
+					"host": [
+						"{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}"
+					],
+					"path": [
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete https://reqres.in/users/2 Deletes user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.get(\"pageno\");\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}/10",
+					"host": [
+						"{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}"
+					],
+					"path": [
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "CloudHub.Mulesoft.API.URL",
+			"value": "http://postman-learning-mule-demo-api.us-e2.cloudhub.io",
+			"type": "string"
+		},
+		{
+			"key": "ReqRes.Website.URL",
+			"value": "https://reqres.in",
+			"type": "string"
+		},
+		{
+			"key": "CloudHub.Mulesoft.API.PATH",
+			"value": "/api/search",
+			"type": "string"
+		},
+		{
+			"key": "ReqRes.Website.PATH",
+			"value": "/api/users",
+			"type": "string"
+		},
+		{
+			"key": "name",
+			"value": ""
+		}
+	]
+}
