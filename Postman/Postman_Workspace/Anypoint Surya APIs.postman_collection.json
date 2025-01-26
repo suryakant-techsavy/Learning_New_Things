@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "def32d2c-a869-4f69-b1fb-7bc007fd3847",
+		"name": "Anypoint Surya APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "Logs into Anypoint n gives access_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"mule_practice2\",\n  \"password\": \"Mule_practice2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://anypoint.mulesoft.com/accounts/login",
+					"protocol": "https",
+					"host": [
+						"anypoint",
+						"mulesoft",
+						"com"
+					],
+					"path": [
+						"accounts",
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST https://anypoint.mulesoft.com/accounts/login \\\n-H \"Content-Type: application/json\" \\\n-d '{\n  \"username\": \"your-username\",\n  \"password\": \"your-password\"\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://anypoint.mulesoft.com/cloudhub/api/v2/applications/{appId}/start",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4cb9718b-2cfb-4c5a-bead-a18b7988417c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <access_token>",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://anypoint.mulesoft.com/cloudhub/api/v1/applications",
+					"protocol": "https",
+					"host": [
+						"anypoint",
+						"mulesoft",
+						"com"
+					],
+					"path": [
+						"cloudhub",
+						"api",
+						"v1",
+						"applications"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST https://anypoint.mulesoft.com/cloudhub/api/v2/applications/{appId}/start \\\n-H \"Authorization: Bearer <access_token>\""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,39 @@
+#%RAML 1.0
+types:
+  contacts:
+    description: contacts Datatype gets details in format of firstname,lastname,email,company
+    properties:
+      first_name?:
+        example: mule
+        type: string
+      last_name?:
+        example: soft
+        type: string
+      email?:
+        example: mule.soft@mulesoft.com
+        type: string
+      company?:
+        example: mulesoft
+        type: string
+
+title: Get Contacts API
+baseUri: http://www.muletuts.com
+description: |
+  This API is used to get contact details from Demo DB
+mediaType:
+  - application/json
+  - application/xml
+version: "1.0"
+protocols:
+  - HTTP
+  - HTTPS
+/contacts:
+  get:
+    displayName: contacts
+    description: Gets contact details from DB
+    responses:
+      "200":
+        body:
+          application/json:
+            items:
+              type: contacts

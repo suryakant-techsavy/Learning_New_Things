@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "45348f8e-e9d1-4760-b126-1c0c4c71e7e5",
+		"name": "Github API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "Deleting A Single Repository Thru Github API Call",
+			"item": [
+				{
+					"name": "Delete https://api.github.com/repos/{uname}/{repo-name}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "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",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.github.com/repos/suryakantdubalgundeoutlook/hacktoberfestAYush2022",
+							"protocol": "https",
+							"host": [
+								"api",
+								"github",
+								"com"
+							],
+							"path": [
+								"repos",
+								"suryakantdubalgundeoutlook",
+								"hacktoberfestAYush2022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/deleterepo",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"uname\": \"suryakantdubalgundeoutlook\",\r\n    \"repo_list\": [\r\n        \"hacktoberfest-initial-contributors\",\r\n        \"HaikyuuHaikyuu\",\r\n        \"HacktoberFest-23-AppDev\",\r\n        \"bcsHacktoberFest\",\r\n        \"Java-hacktoberfest23\",\r\n        \"Hacktoberfest23\",\r\n        \"hacktoberfestAYush2022hacktoberfestAYush2022\",\r\n        \"intro-to-hacktoberfestintro-to-hacktoberfest\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/deleterepo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"deleterepo"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This API requires Bearer Auth token which is personal access token from github(you can create by navigating to github->settings->developer setting->personal access token n in header it accepts \\*/\\* n in uri param it requires uname of github account n repository name that you want to delete."
+		}
+	]
+}

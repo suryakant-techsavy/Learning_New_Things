@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "4057a571-61f6-4255-bb9d-5c355d9ddc22",
+		"name": "Udemy Mulesoft Courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "MuleSoft 4 Fundamentals - Beginner to Expert Level",
+			"item": [
+				{
+					"name": "change demo no for other calls",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/surya-sys-learn-udemy/demo6?name=suryakant&age=29&company=Deloitte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"surya-sys-learn-udemy",
+								"demo6"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "suryakant"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "company",
+									"value": "Deloitte"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Uriparams-queryparams",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\": \"hello World!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/surya-sys-learn-udemy/demo/N123?name=suryakant&age=29&company=Deloitte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"surya-sys-learn-udemy",
+								"demo",
+								"N123"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "suryakant"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "company",
+									"value": "Deloitte"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lookup fn check",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/surya-sys-learn-udemy/orders?name=suryakant&age=29&company=Deloitte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"surya-sys-learn-udemy",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "suryakant"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "company",
+									"value": "Deloitte"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "for-each",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"suryakant\",\r\n        \"age\": 29\r\n    },\r\n    {\r\n        \"name\": \"shantkumar\",\r\n        \"age\": 31\r\n    },\r\n    {\r\n        \"name\": \"shivkant\",\r\n        \"age\": 27\r\n    },\r\n    {\r\n        \"name\": \"Tukamma\",\r\n        \"age\": 22\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/surya-sys-learn-udemy/demo8?name=suryakant&age=29&company=Deloitte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"surya-sys-learn-udemy",
+								"demo8"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "suryakant"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "company",
+									"value": "Deloitte"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "for-each",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"name\": \"suryakant\",\r\n        \"age\": 29\r\n    },\r\n    {\r\n        \"name\": \"shantkumar\",\r\n        \"age\": 31\r\n    },\r\n    {\r\n        \"name\": \"shivkant\",\r\n        \"age\": 27\r\n    },\r\n    {\r\n        \"name\": \"Tukamma\",\r\n        \"age\": 22\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/surya-sys-learn-udemy/demo8?name=suryakant&age=29&company=Deloitte",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"surya-sys-learn-udemy",
+										"demo8"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "suryakant"
+										},
+										{
+											"key": "age",
+											"value": "29"
+										},
+										{
+											"key": "company",
+											"value": "Deloitte"
+										}
+									]
+								}
+							},
+							"status": "Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Aug 2023 06:14:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "sizeOf(payload) is not ==3"
+						}
+					]
+				},
+				{
+					"name": "parallel for-each",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"suryakant\",\r\n        \"age\": 29\r\n    },\r\n    {\r\n        \"name\": \"shantkumar\",\r\n        \"age\": 31\r\n    },\r\n    {\r\n        \"name\": \"shivkant\",\r\n        \"age\": 27\r\n    },\r\n    {\r\n        \"name\": \"Tukamma\",\r\n        \"age\": 22\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/surya-sys-learn-udemy/demo9?name=suryakant&age=29&company=Deloitte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"surya-sys-learn-udemy",
+								"demo9"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "suryakant"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "company",
+									"value": "Deloitte"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "parallel for-each",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"name\": \"suryakant\",\r\n        \"age\": 29\r\n    },\r\n    {\r\n        \"name\": \"shantkumar\",\r\n        \"age\": 31\r\n    },\r\n    {\r\n        \"name\": \"shivkant\",\r\n        \"age\": 27\r\n    },\r\n    {\r\n        \"name\": \"Tukamma\",\r\n        \"age\": 22\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/surya-sys-learn-udemy/demo9?name=suryakant&age=29&company=Deloitte",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"surya-sys-learn-udemy",
+										"demo9"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "suryakant"
+										},
+										{
+											"key": "age",
+											"value": "29"
+										},
+										{
+											"key": "company",
+											"value": "Deloitte"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3894"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Aug 2023 13:21:55 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Success\": {\n        \"1\": {\n            \"inboundAttachmentNames\": [],\n            \"exceptionPayload\": null,\n            \"inboundPropertyNames\": [],\n            \"outboundAttachmentNames\": [],\n            \"outboundPropertyNames\": [],\n            \"payload\": {\n                \"name\": \"shantkumar\",\n                \"age\": 31\n            },\n            \"attributes\": null\n        },\n        \"2\": {\n            \"inboundAttachmentNames\": [],\n            \"exceptionPayload\": null,\n            \"inboundPropertyNames\": [],\n            \"outboundAttachmentNames\": [],\n            \"outboundPropertyNames\": [],\n            \"payload\": {\n                \"name\": \"shivkant\",\n                \"age\": 27\n            },\n            \"attributes\": null\n        },\n        \"3\": {\n            \"inboundAttachmentNames\": [],\n            \"exceptionPayload\": null,\n            \"inboundPropertyNames\": [],\n            \"outboundAttachmentNames\": [],\n            \"outboundPropertyNames\": [],\n            \"payload\": {\n                \"name\": \"Tukamma\",\n                \"age\": 22\n            },\n            \"attributes\": null\n        }\n    },\n    \"Failures\": {\n        \"0\": {\n            \"suppressedErrors\": [],\n            \"errorType\": {\n                \"identifier\": \"ANY\",\n                \"parentErrorType\": null,\n                \"namespace\": \"MULE\"\n            },\n            \"childErrors\": [],\n            \"errorMessage\": null,\n            \"cause\": {\n                \"verboseMessage\": \"\\r\\n********************************************************************************\\r\\nMessage               : payload.age is 29\\r\\nElement               : (None)\\r\\nElement DSL           : (None)\\r\\nError type            : (None)\\r\\nFlowStack             : (None)\\r\\n--------------------------------------------------------------------------------\\r\\nRoot Exception stack trace:\\r\\norg.mule.runtime.api.exception.DefaultMuleException: payload.age is 29\\r\\n\\r\\n********************************************************************************\\r\\n\",\n                \"localizedMessage\": \"payload.age is 29\",\n                \"summaryMessage\": \"\\r\\n********************************************************************************\\r\\nMessage               : payload.age is 29\\r\\nElement               : (None)\\r\\nElement DSL           : (None)\\r\\nError type            : (None)\\r\\nFlowStack             : (None)\\r\\n\\r\\n  (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)\\r\\n********************************************************************************\\r\\n\",\n                \"cause\": null,\n                \"message\": \"payload.age is 29\",\n                \"i18nMessage\": {\n                    \"code\": -1,\n                    \"nextMessage\": null,\n                    \"message\": \"payload.age is 29\",\n                    \"args\": []\n                },\n                \"detailedMessage\": \"\\r\\n********************************************************************************\\r\\nMessage               : payload.age is 29\\r\\nElement               : (None)\\r\\nElement DSL           : (None)\\r\\nError type            : (None)\\r\\nFlowStack             : (None)\\r\\n\\r\\n  (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)\\r\\n********************************************************************************\\r\\n\",\n                \"additionalInfo\": {},\n                \"messageCode\": -1,\n                \"stackTrace\": [],\n                \"suppressed\": [],\n                \"exceptionInfo\": {\n                    \"dslSource\": null,\n                    \"alreadyLogged\": false,\n                    \"errorType\": null,\n                    \"flowStack\": null,\n                    \"location\": null,\n                    \"suppressedCauses\": []\n                },\n                \"info\": {}\n            },\n            \"description\": \"payload.age is 29\",\n            \"detailedDescription\": \"payload.age is 29\",\n            \"failingComponent\": \"parallel-for-each/processors/2/processors/1/route/0/processors/0 @ surya-sys-learn-udemy:surya-sys-learn-udemy.xml:274 (Raise error)\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "cloudhub url 1surya-sys-learn-udemy-fromtarget-jar.us-e2.cloudhub.io/surya-sys-learn-udemy/demo10?name=Edna&age=29&company=Deloitte",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "surya-sys-learn-udemy-fromtarget-jar.us-e2.cloudhub.io/surya-sys-learn-udemy/demo10?name=Edna&age=29&company=Deloitte",
+							"host": [
+								"surya-sys-learn-udemy-fromtarget-jar",
+								"us-e2",
+								"cloudhub",
+								"io"
+							],
+							"path": [
+								"surya-sys-learn-udemy",
+								"demo10"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Edna"
+								},
+								{
+									"key": "age",
+									"value": "29"
+								},
+								{
+									"key": "company",
+									"value": "Deloitte"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Objectstore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/surya-sys-learn-udemy/os",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"surya-sys-learn-udemy",
+						"os"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "suryakant",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "29",
+							"disabled": true
+						},
+						{
+							"key": "company",
+							"value": "Deloitte",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,35 @@
+Tell me about yourself, experience and roles and Responsibilities?
+
+Which version of MuleSoft you worked?
+
+
+API led connectivity?
+API lifecycle?
+Can you explain some the connectors used in your project?
+How you apply the policies in your project?
+What is Scatter-Gather?
+Difference Between For-each and batch processing
+What is the meaning of auto discovery?
+what is the use of Rate Limiting policy, 
+Fragments:
+
+What is traits in RAML?
+If we wanted to process only one message at a time in mule flow how can we achieve that?
+How can you process message asynchronously in Mule Soft?
+What is Anypoint Exchange in MuleSoft?
+What are the different types of APIs in API led architecture
+Flow types
+Explain few Http Status Codes:
+200 - OK
+- CREATED
+ - Accepted
+400 – Bad request
+401-Unauthorized
+404 – Not found
+429 – Too many requests
+In the Mule project where the package dependencies details are stored.
+POM. XML file
+How to access query Parameters and other attributes?
+
+what are the methods developed in your project?
+

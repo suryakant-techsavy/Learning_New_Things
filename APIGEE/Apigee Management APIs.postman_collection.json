@@ -1,0 +1,624 @@
+{
+	"info": {
+		"_postman_id": "76e70cf2-e313-4cb2-98d3-cdf3c793adbf",
+		"name": "Apigee Management APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET API Deployment - Message Processors",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/apis/user-api/deployments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"apis",
+						"user-api",
+						"deployments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cache List",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/caches/user-api-cache",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"caches",
+						"user-api-cache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cache Clear",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/octet-stream",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/caches/user-api-cache/entries?action=clear",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"caches",
+						"user-api-cache",
+						"entries"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "clear"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cache List",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/caches",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"caches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cache Create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Book Cache\",\r\n  \"expirySettings\": {\r\n    \"expiryDate\": {\r\n      \"value\": \"09-09-2020\"\r\n    },\r\n    \"valuesNull\": \"false\"\r\n  },\r\n  \"overflowToDisk\": \"false\",\r\n  \"skipCacheIfElementSizeInKBExceeds\": \"50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/caches?name=book-api-cache",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"caches"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "book-api-cache"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cache Clear",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/octet-stream",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/caches/user-api-cache/entries?action=clear",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"caches",
+						"user-api-cache",
+						"entries"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "clear"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST KVM Create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n \"name\" : \"kvm-created-using-api\",\r\n \"encrypted\" : \"false\",\r\n \"entry\" : [ \r\n  {\r\n   \"name\" : \"Key1\",\r\n   \"value\" : \"Value1\"\r\n  },\r\n  {\r\n   \"name\" : \"Key2\",\r\n   \"value\" : \"Value2\"\r\n  },\r\n  {\r\n   \"name\" : \"Key3\",\r\n   \"value\" : \"Value3\"\r\n  },\r\n  {\r\n   \"name\" : \"Key4\",\r\n   \"value\" : \"Value4\"\r\n  }   \r\n ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/keyvaluemaps",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"keyvaluemaps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET KVM List",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/keyvaluemaps",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"keyvaluemaps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE KVM Entry",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/keyvaluemaps/kvm-created-using-api/entries/Key1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"keyvaluemaps",
+						"kvm-created-using-api",
+						"entries",
+						"Key1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST KVM Create an Entry",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\" : \"Key5\",\r\n  \"value\" : \"Value5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/keyvaluemaps/kvm-created-using-api/entries",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"keyvaluemaps",
+						"kvm-created-using-api",
+						"entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST KVM Update an Entry",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\" : \"Key5\",\r\n  \"value\" : \"Value5-Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/keyvaluemaps/kvm-created-using-api/entries/Key5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"keyvaluemaps",
+						"kvm-created-using-api",
+						"entries",
+						"Key5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE KVM",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "PutYourPassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "amazeittech@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.enterprise.apigee.com/v1/o/amazeittech-eval/environments/test/keyvaluemaps/kvm-created-using-api",
+					"protocol": "https",
+					"host": [
+						"api",
+						"enterprise",
+						"apigee",
+						"com"
+					],
+					"path": [
+						"v1",
+						"o",
+						"amazeittech-eval",
+						"environments",
+						"test",
+						"keyvaluemaps",
+						"kvm-created-using-api"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

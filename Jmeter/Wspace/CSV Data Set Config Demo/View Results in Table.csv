@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1661677054627,933,HTTP Request-https-www.google.com-/search?q=mulesoft,200,OK,Thread Group-${protocol}-${ip}-${path} 1-1,text,true,,356908,136,3,3,https://www.google.com/search?q=mulesoft,197,0,99
+1661677054961,776,HTTP Request-https-www.google.com-/search?q=Jmeter,200,OK,Thread Group-${protocol}-${ip}-${path} 1-2,text,true,,126116,134,2,2,https://www.google.com/search?q=Jmeter,164,0,64
+1661677055295,573,HTTP Request-https-www.google.com-/search?q=Github,200,OK,Thread Group-${protocol}-${ip}-${path} 1-3,text,true,,113249,134,1,1,https://www.google.com/search?q=Github,182,0,81
