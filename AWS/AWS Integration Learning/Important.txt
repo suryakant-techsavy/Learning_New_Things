@@ -1,0 +1,8 @@
+Hello Everyone,
+
+Thanks for showing up your interest for AWS Integrations learning program. Please note few points –
+
+•	Learning Pathway will be 2 weeks.
+•	Learning program starts on 25th September 2024 till 15th October 2024.
+•	Please don’t forward the details/materials/meeting invites you receive. This is a focused batch for responses received from practitioners for survey that was earlier rolled out.
+•	Upon completion of the AWS Integrations learning program, you will be provided with a proof of concept (POC) task in AWS, which you are required to complete within 22nd Oct 2024.

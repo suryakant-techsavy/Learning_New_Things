@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "b4127164-8d79-4274-9af4-71cdb0470f28",
+		"name": "Mule-Practice_Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "local endpoint",
+			"item": [
+				{
+					"name": "get /hello-mule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/api/hello-mule/Suryakant,Dubalgunde?name=Shantkumar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"hello-mule",
+								"Suryakant,Dubalgunde"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Shantkumar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cloudhub endpoint",
+			"item": [
+				{
+					"name": "get /hello-mule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://skd-demo-hello-mule.us-e2.cloudhub.io/api/hello-mule/Suryakant,Dubalgunde?name=Shantkumar",
+							"protocol": "http",
+							"host": [
+								"skd-demo-hello-mule",
+								"us-e2",
+								"cloudhub",
+								"io"
+							],
+							"path": [
+								"api",
+								"hello-mule",
+								"Suryakant,Dubalgunde"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Shantkumar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RAML-Getting started with Anypoint platform",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

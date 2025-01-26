@@ -1,0 +1,69 @@
+#%RAML 1.0
+title: Mobile Order API
+version: 1.0.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/aee1f4e6-edbb-4968-ad26-e5098ef9c85e/api # baseUri: http://localhost:8081/api
+
+uses:
+  assets:  types.raml
+
+securitySchemes:
+  basic:
+    description: |
+      This API supports Basic Authentication.
+    type: Basic Authentication
+
+/orders:
+  displayName: Orders
+  description: Orders collection resource used to create new orders.
+  get:
+    securedBy: [basic]
+    description: lists all orders of a specific user
+    queryParameters:
+      userId:
+        type: string
+        description: use to query all orders of a user
+        required: true
+        example: "1964401a-a8b3-40c1-b86e-d8b9f75b5842"
+    responses:
+      200:
+        body:
+          application/json:
+            type: assets.Orders
+            examples:
+              single-order:
+                orders:
+                  -
+                    order_id: "ORDER-437563756"
+                    creation_date: "2016-03-30"
+                    items:
+                      -
+                        product_id: "PRODUCT-1"
+                        quantity: 5
+                      -
+                        product_id: "PRODUCT-2"
+                        quantity: 2
+  
+  post:
+    securedBy: [basic]
+    description: create order
+    body:
+      application/json:
+        examples:
+          {
+            userid : "user123",
+            items : [
+              {
+                "product_id":"PRODUCT-1",
+                "quantity":5
+              }
+            ] 
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              {
+                "message" : "order created successfully"
+              }
+              
