@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "5038a4a2-576a-4d63-894c-ede3b5bd85c9",
+		"name": "Integration-POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "Personal_SNOW",
+			"item": [
+				{
+					"name": "Basic_Personal getRecords",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8082/P_getRecords?inc=INC0010096",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8082",
+							"path": [
+								"P_getRecords"
+							],
+							"query": [
+								{
+									"key": "inc",
+									"value": "INC0010096"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth_Personal getRecords",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8082/P_auth/getRecords?inc=INC0010096",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8082",
+							"path": [
+								"P_auth",
+								"getRecords"
+							],
+							"query": [
+								{
+									"key": "inc",
+									"value": "INC0010096"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Basic_Personal CreateIncident",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"short_description\":\"This is a Dummy ticket {{$randomInt}} created from mule-servicenow-poc mule application from deloitte localhost\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8082/P_CreateIncident",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8082",
+							"path": [
+								"P_CreateIncident"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WM_SNOW",
+			"item": [
+				{
+					"name": "Basic_WM getRecords",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8081/WM_getRecords?inc=INC0022741",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8081",
+							"path": [
+								"WM_getRecords"
+							],
+							"query": [
+								{
+									"key": "inc",
+									"value": "INC0022741"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth_WM getRecords",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8081/WM_auth/getRecords?inc=INC0022741",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8081",
+							"path": [
+								"WM_auth",
+								"getRecords"
+							],
+							"query": [
+								{
+									"key": "inc",
+									"value": "INC0022741"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth_WM CreateIncident",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"short_description\":\"This is a Dummy ticket 155 created from mule-servicenow-poc mule application from deloitte localhost\"\n}"
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8081/WM_auth/CreateIncident",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8081",
+							"path": [
+								"WM_auth",
+								"CreateIncident"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sample_POC",
+			"item": [
+				{
+					"name": "GET /account sampleoauthtest app-Mule-Salesforce Auth2.0",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsondata=pm.response.json();\r",
+									"pm.globals.set(\"jsonresponse\",jsondata.per_page);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"surya\":\"{{$randomInt}}\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}",
+							"host": [
+								"{{ReqRes.Website.URL}}{{ReqRes.Website.PATH}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

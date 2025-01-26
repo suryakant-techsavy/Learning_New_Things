@@ -1,0 +1,5 @@
+
+
+API Design Associate certification:-
+1)https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md----------------For preparation
+2)https://training.mulesoft.com/certification/developer-apidesign-associate-level1--------------For Exam link

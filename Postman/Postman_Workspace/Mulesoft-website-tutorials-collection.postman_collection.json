@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "5e4d37a2-6b99-4150-afa5-39fa6b46ce6e",
+		"name": "Mulesoft-website-tutorials-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "protocol",
+			"value": "http",
+			"type": "string"
+		},
+		{
+			"key": "host",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "port",
+			"value": "443",
+			"type": "string"
+		},
+		{
+			"key": "endpoint",
+			"value": "/contacts",
+			"type": "string"
+		}
+	]
+}

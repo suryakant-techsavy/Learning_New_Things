@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "41ab7aa9-af02-4648-a455-241bbb798a7c",
+		"name": "CH 2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18338396"
+	},
+	"item": [
+		{
+			"name": "Manual Deployment in RM after publishing via MMP in Exchange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ch2-wdaz4q.5sc6y6-3.usa-e2.cloudhub.io/mmpdeploy",
+					"protocol": "https",
+					"host": [
+						"ch2-wdaz4q",
+						"5sc6y6-3",
+						"usa-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"mmpdeploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auto Deployment in RM after publishing via MMP the code in exchange by using connected apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ch2-mavenplugin-deployment1-wdaz4q.5sc6y6-4.usa-e2.cloudhub.io//mmpdeploy",
+					"protocol": "https",
+					"host": [
+						"ch2-mavenplugin-deployment1-wdaz4q",
+						"5sc6y6-4",
+						"usa-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"",
+						"mmpdeploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auto Deployment in RM after publishing via MMP the code in exchange by using connected apps by removing snapshot keyword in pom",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ch2-mvnplugin-withoutsnapshot-keyword-wdaz4q.5sc6y6-2.usa-e2.cloudhub.io/mmpdeploy",
+					"protocol": "https",
+					"host": [
+						"ch2-mvnplugin-withoutsnapshot-keyword-wdaz4q",
+						"5sc6y6-2",
+						"usa-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"mmpdeploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://appdeployedon-8081-cloudhubvpc.us-e2.cloudhub.io/test accessible publicly only with http  n not with https(for https to work app should be deployed on 8082) since 8081 n 8082 are public port n they communicate with app deployed in cb vpc by using S",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://appdeployedon-8081-cloudhubvpc.us-e2.cloudhub.io/test",
+					"protocol": "http",
+					"host": [
+						"appdeployedon-8081-cloudhubvpc",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://appdeployedon-8091-cloudhubvpc.us-e2.cloudhub.io/test  not accessible over public internet  n only accessible in cloudhubvpc and  only will work with http  n not with https(for https to work app should be deployed on 8092) becoz 8091 n 8092 are pri",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://appdeployedon-8091-cloudhubvpc.us-e2.cloudhub.io/test",
+					"protocol": "http",
+					"host": [
+						"appdeployedon-8091-cloudhubvpc",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

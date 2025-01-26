@@ -1,0 +1,188 @@
+“BCP Internet Access Fee"
+GAAXXXXX-01-01-01-0000
+Internet Expense
+1500
+
+
+Telephone > Smartphone, Cell Phone, AirCard
+Voice and Data
+GAAXXXXX-01-01-01-0000
+communication Expense
+500
+
+Meals->After work Hours
+NB10
+Approved virtual meal for project work during late hours working / weekend work / holiday work” Approving Leader Name: Motwani, Manish/ Priydarshi,Tanmay
+500
+
+who are supporting on weekend can use below steps to claim meal allowance:
+For meal allowance :
+select expense type-> Meals>Business(client/Non-client)
+chargecode should be: WAS00109-01-01-01-NB10
+Substantiation: Approved virtual meal for project work during late hours working / weekend work / holiday work” Approving Leader Name: Motwani, Manish/ Priydarshi, Tanmay
+
+
+6500(Reim)
+- 1286(exp for 1 week 2 days())
+-------------
+5214
+-  610( exp for 2nd week 0 days ())
+-----------------------------
+4604
+-( exp for 3rd week  2 days  ())
+---------------------------
+
+-  ( exp for 4th week 2 days())
+------------------------------ 
+
+-     (exp for 5th week 2 days())
+--------------------------------
+
+
+
+Awards N Recognition From Deloitte
+-------------------------------------
+----------------------------------
+
+Feb 22 Vij spot
+april 22 mani 5000 vp MVP 9
+nov 22 tri shoutout MVP 11
+aug 23 mani 5000vp MVP 13
+nov23 sit shoutout MVP 14
+Dec 23 Applause(Ash for MAy 2023) 10000 MVP 12
+mar 24 mani 3000 vp 
+Sept 24 sitansu Shoutout J17 Successful Release
+
+
+--------------Mulesoft Ticket Raise for Certification -----------
+trainingops@mulesoft.com
+MuleSoft Training Ops <trainingops@training.mulesoft.com>
+trainingops@trainingops.mulesoft.com
+https://trailhead.salesforce.com/en/help
+
+
+------Check-in Conversation----------
+Fill the snapshot but before or after that have a call with Sitansu n  Rahul n Ashish once
+
+
+How to ask for a call to discuss abt performance n feedback from ur senior?
+
+
+I hope you're doing well. I was hoping to schedule a brief call with you to discuss my performance and gather some feedback. I want to ensure I'm meeting expectations and identify any areas where I can improve. Would it be possible to find a time that works for both of us?
+
+
+questions to ask??
+
+Hi ,
+2025 is the my milestone year and I want everything should be aligned for getting promoted for this year.I want the project support and promotion flag enabled to get the promotion for this year.So that is why I want to discuss my performance and gather some feedback ?
+
+ 
+I have total 7yrs of experience in It n 2 years in deloitte.I joined deloitte in nov 2021 from that time I have seen two year end 
+Target year? 2025
+
+
+Will project support for my promotion this year ?
+If no then? ask why not?
+How I am doing?
+Where I need to improve?
+
+Any difficulties in team?yes
+
+1) Is it compulsory that we should come to velocity office only for 2 days
+1) Sitansu deepali anubhav will connect n they try to find solution n after they find soln they come to developer with expectation that developer already knows what was going on n what solution need to deliver without involving him/her from scratch?
+
+Visibility problem becoz the work i m doing that is not shown as team effort for erl integratin in RC track by nidhi?
+Any upcoming work in DA track?
+
+
+
+
+ Investments decalred on HR Workays for FY 24-25
+-------------------------------------------------
+
+Regime Choosen: Old 
+-------------------
+ 
+80d medical insurance
+parent no insurance 5000
+self  no insurance 5000
+
+80EEA Interest on Saving Bank A/c 500
+
+
+
+80c (limit 150000)
+home loan principle 150000
+EPF= (6264*10)+(5460*2)=73560
+ppf= 1000*1= 1000
+lic 2328*12=27936
+
+80ccd1b
+nps 4166.66*12=49,999.92
+
+24b income from house intesest on loan 3,23,356
+
+
+------------------------How to ask HR about the Referral status-------------
+I wanted to inquire about the status of a referral I made for the position of Finance Ops - AP. I had referred Shantkumar Dubalgunde on 05-Apr-2024 and would appreciate any updates regarding their application process.
+If there are any additional steps that I need to undertake to support this referral, kindly let me know. I believe Shantkumar Dubalgunde would be a great addition to our team and I'm eager to know how their application is progressing. 
+
+
+Dear [HR's Name],
+
+I hope this email finds you well. I am reaching out to follow up on a recent referral, Shantkumar Dubalgunde, who I believe could be a great fit for our team.
+
+I recommended Shantkumar Dubalgunde for the Finance Ops - AP position due to his exceptional skills.
+
+I understand that our HR department is very diligent and careful in its hiring process. However, I wanted to ensure that my referral didn't slip through the cracks and to express my confidence in Shantkumar Dubalgunde ability to contribute significantly to our organization.
+
+Please let me know if there is any additional information I can provide about Shantkumar Dubalgunde, or if there are any next steps in the process that I can assist with.
+
+I am looking forward to hearing from you.
+
+Best regards,
+Suryakant
+
+
+
+June 24
+1788156
+152004 8.5%
+------------
+1940160 /12=161680
+
+
+214579 12%
+
+June 23
+
+1560000
+228156 (14.6%)
+-----------------
+1788156/12=149013
+
+179400 (11.5%)
+
+
+76152 (Line No 13-3)
+35179 (Line No 8-17)
+------
+40973(Loss for this 2024 year)
+
+
+Total CTC Package 1940160+214579+34359=21,89,098 LPA
+Excluding Bonus Total CTC will be 1974519
+
+
+Hi @ashish ,
+
+
+
+
+Actually I wanted to say "Thank you!" for the valuable feedback you provided and I have started working on the points you mentioned.
+I have a few additional points I would like to discuss:
+AWS Integrations Training: I am keen to enhance my skills in AWS Integration and have completed the necessary survey for the training. Could you please review and approve it if required?
+Performance Ratings: Since joining Deloitte three years ago, I have consistently received positive feedback indicating continuous improvement. However, my ratings have consistently been marked as "Agree," which has resulted in a commensurate rating during the Year-End Review every year. I would appreciate it if we could discuss the possibility of a higher rating that accurately reflects my continuous contributions and continuous growth.
+ONL Flag Status: During our last check-in call, Rahul mentioned that I am effectively managing tasks related to new-comers handling and the J17-CH2 project. He indicated that the ONL flag would be enabled for me. Could you please confirm if this has been done?
+I look forward to your response.
+

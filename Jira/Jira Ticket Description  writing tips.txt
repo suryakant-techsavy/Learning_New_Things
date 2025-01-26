@@ -1,0 +1,39 @@
+AS A Mulesoft Developer
+
+I WANT to add new field called “facilityId”  in the API definition and declaration part
+
+SO THAT I get the facilityId in API response.
+
+Prerequisite:-
+
+The ElasticSearch team should have introduced new field called “facilityId”  in their respective system.
+
+Acceptance Criteria:
+
+Should Get facilityId field in the API response.
+
+--------------------------------------------------------------------------------------------------------------------------|
+
+
+As part of code refactor, the facilityId field should be available in API response and/or request.
+
+Prerequisite:
+The facilityId field should be passed from Elastic Search System in order to be populated in ESB API response.
+
+Elastic Search system should have the placeholder to accept facilityId field from ESB API request.
+
+Technical Details:
+API Name: wm-sys-es-contacts
+
+Changes to the response of this API will return the facityId in response during fetch contact operation and will pass the same during update contact operation.
+
+Below are the changes to accommodate the ask.
+
+
+
+Acceptance Criteria:
+facilityId field should be populated in fetch contact response.
+
+facilityId field should be passed in update contact request to ES.
+
+
